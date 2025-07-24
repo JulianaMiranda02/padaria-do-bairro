@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Padaria Artesanal Art</title> <!-- Título da aba do navegador -->
+</head>
+
+<body>
+    <h1>Contato</h1> <!-- Título principal da página -->
+
+    <!-- Início do formulário de contato -->
+    <form>
+        <!-- Campo para informações básicas -->
+        <fieldset>
+            <legend><strong>Informações de Contato</strong></legend>
+
+            <!-- Campo para nome completo -->
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+            <!-- Campo para e-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+            <!-- Campo para escolher o assunto -->
+            <label for="assunto">Assunto:</label><br>
+            <select name="assunto" id="assunto" required>
+                <option value="">--Escolha --</option>
+                <option value="pedido">Pedido</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="outro">Outro</option>
+            </select>
+        </fieldset>
+
+        <!-- Campo com informações opcionais -->
+        <fieldset>
+            <legend><strong>Campo opcional:</strong></legend>
+            <!-- Campo para telefone com padrão de validação -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\s\d{5}-\d{4}"
+                placeholder="(xx) xxxxx-xxxx" required title="Conforme o formato (xx) xxxxx-xxxx"><br><br>
+
+            <!-- Área para mensagem com limite de caracteres -->
+            <label for="mensagem">Mensagem:</label><br><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" minlength="10"
+                maxlength="30"></textarea><br><br>
+
+            <!-- Botões para envio e limpeza do formulário -->
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+        </fieldset>
+
+    </form><br><br>
+
+    <!-- Informações de contato adicionais -->
+    <div id="contato">
+        <address>
+            <!-- Link de e-mail -->
+            <a href="contatojuh@padariaartesanal.com.br">contatojuh@padariaartesanal.com.br</a><br>
+            <p>(11) 99999-1234 (WhatsApp)</p>
+            <p>Encomendas via WhatsApp ou direto no balcão</p>
+        </address>
+    </div>
+
+</body>
+
+</html>

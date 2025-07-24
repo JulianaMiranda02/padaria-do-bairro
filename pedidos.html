@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+
+<body>
+    <h1>Pedidos</h1> <!-- Título principal da página -->
+    <form>
+        <!-- Início do campo de informações do cliente -->
+        <fieldset>
+            <legend><strong>Dados do Cliente:</strong></legend>
+
+            <!-- Campo para inserir o nome completo -->
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br><br>
+
+            <!-- Campo para inserir o e-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+            <!-- Campo para inserir o telefone no formato específico (xx) xxxxx-xxxx -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required
+                pattern="\(\d{2}\)\s\d{5}-\d{4}"><br><br>
+
+        </fieldset>
+        <!-- Início do campo de detalhes do pedido -->
+        <fieldset>
+            <legend><strong>Detalhes do Pedido:</strong></legend>
+            <!-- Escolha do tipo de produto -->
+            <label>Tipo de Produto:</label>
+
+            <input type="radio" value="paes" id="paes" name="tipo_de_produto" required>
+            <label for="paes">Pães</label>
+
+            <input type="radio" value="brownie" id="brownie" name="tipo_de_produto" required>
+            <label for="brownie">Brownie</label>
+
+            <input type="radio" value="croissant" id="croissant" name="tipo_de_produto" required>
+            <label for="croissant">Croissant</label><br><br>
+
+            <!-- Seleção do sabor -->
+            <label for="sabor">Sabor:</label><br>
+
+            <select id="sabor" name="sabor" required>
+                <option value="">--Escolha --</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="tradicional">Tradicional</option>
+                <option value="morango">Morango</option>
+                <option value="coco">Coco</option>
+                <option value="baunilha">Baunilha</option>
+                <option value="pizza">Pizza</option>
+                <option value="alho">Alho</option>
+
+            </select><br><br>
+            <!-- Escolha do tamanho do produto -->
+            <label>Tamanho:</label>
+
+            <input type="radio" value="pequeno" id="pequeno" name="tamanho" required>
+            <label for="pequeno">Pequeno</label>
+
+            <input type="radio" value="medio" id="medio" name="tamanho" required>
+            <label for="medio">Médio</label>
+
+            <input type="radio" value="grande" id="grande" name="tamanho" required>
+            <label for="grande">Grande</label>
+            <br><br>
+
+            <!-- Campo de quantidade -->
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="10" required><br><br>
+
+            <!-- Campo de data de entrega -->
+            <label for="data-de-entrega">Data de Entrega:</label>
+            <input type="date" id="data-de-entrega" name="data-de-entrega" required>
+            
+        </fieldset>
+
+        <!-- Início do campo de informações adicionais -->
+        <fieldset>
+            <legend><strong>Informações Adicionais:</strong></legend>
+
+            <!-- Campo de orçamento -->
+            <label for="orcamento">Orçamento:</label>
+            <input type="number" id="orcamento" name="orcamento" min="30" max="5000" required><br><br>
+
+            <!-- Campo de observações especiais -->
+            <label> Observações especiais:</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" minlength="15"
+                maxlength="80"></textarea><br><br>
+
+            <!-- Botões de envio e reset do formulário -->
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

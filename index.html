@@ -4,8 +4,22 @@
 <head>
     <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
+
+    <!-- Torna a página responsiva em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Descrição da página para mecanismos de busca (SEO) -->
+    <meta name="description"
+        content="Padaria do Bairro - Os melhores pães artesanal doces frescos da sua região. Tradição e sabor para o seu dia a dia.">
+
+    <!-- Palavras-chave relacionadas ao conteúdo da página -->
+    <meta name="keywords"
+        content="padaria, pães, doces, bolo, café, pão francês, torta,  Jardim das Flores, São Paulo, SP, Padaria Artesanal Art">
+
+    <!-- Título da aba do navegador -->
     <title>Padaria Artesanal Art </title>
+
 </head>
 
 <body>
@@ -13,8 +27,7 @@
     <header>
         <!-- Cabeçalho da página com título e imagem principal -->
         <h1><em>Padaria Artesanal Art </em></h1>
-        <img src="assets/img/imagemprincipalpao.jpg" alt="desenho de uma mulher com uma cesta de pão" width="500"
-            height="400">
+        <img src="assets/img/imagemprincipalpao.jpg" alt="desenho de uma mulher com uma cesta de pão" width="300">
 
         <p>Seja bem vindo a Padaria Artesanal Art !</p>
     </header>
@@ -27,11 +40,18 @@
             <li><a href="#diferenciais">Diferenciais</a></li>
             <li><a href="#horarios">Horários de Funcionamento</a></li>
             <li><a href="#localizacao">Localização</a></li>
+
+            <!-- Links que abrem em nova aba -->
+            <li><a href="/contato.html" target="_blank">Contato</a></li>
+            <li><a href="/pedidos.html" target="_blank">Pedidos</a></li>
+            <li><a href="/feedback.html" target="_blank">Feedback</a></li>
+            <li><a href="/cadastro.html" target="_blank">Cadastro</a></li>
         </ul>
     </nav>
 
+    <!-- Conteúdo principal -->
     <main>
-        <!-- Seção sobre a padaria -->
+        <!-- Seção "Sobre nós" com descrição da padaria e vídeo institucional -->
         <section id="sobre-nos">
 
             <h2>Sobre nós</h2>
@@ -46,6 +66,7 @@
 
             <p>A padaria foi fundada em 2010, pela minha mãe, Dona Teresa. O carro-chefe é o pão de queijo caseiro.</p>
 
+            <!-- Vídeo institucional da padaria -->
             <p> <strong>Uma breve demonstração do nosso café veja abaixo:</strong></p>
             <video width="400" height="240" controls>
                 <source src="assets/video/video-institucional-padaria.mp4" type="video/mp4">
@@ -53,11 +74,12 @@
 
         </section>
 
-        <!-- Seção: Tabela com os produtos da padaria -->
+        <!-- Seção de produtos com tabelas: Pães, Doces, Bebidas -->
         <section id="nossos-produtos">
             <h2>Nossos produtos</h2>
 
-            <!-- Tabela listando os produtos com imagem -->
+            <!-- Sub-seção: Pães -->
+            <h3><i><u>Pães</u></i></h3>
             <table border="1">
                 <thead>
                     <tr>
@@ -69,56 +91,122 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Linha do produto 1 -->
+                    <!-- Linhas para diferentes tipos de pães -->
+                    <!-- Exemplo de pão artesanal -->
                     <tr>
-                        <td>Pães</td>
+                        <td>Pães Artesanais</td>
                         <td>Pão de Fermentação Natural</td>
                         <td>Integral, multigrãos, com nozes</td>
-                        <td>R$ 10,00</td>
+                        <td>R$ 8,00</td>
                         <td><img src="assets/img/pao.jpeg" alt="Pão integral" width="100"></td>
                     </tr>
-                    <!-- Linha do produto 2 -->
+
+                    <tr>
+                        <td>Pães Tradicionais</td>
+                        <td>Pão Francês</td>
+                        <td>Crocante por fora, macio por dentro</td>
+                        <td>R$ 0,80</td>
+                        <td><img src="assets/pao-na-chapa.jpeg" alt="Pão Francês" width="100"></td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>Pães Especiais</td>
+                        <td>Pão de Azeitona</td>
+                        <td>Com pedaços de azeitona preta</td>
+                        <td>R$ 7,50</td>
+                        <td><img src="assets/pao-de-azeitonas.jpeg" alt="Pão de azeitona" width="100"></td>
+                    </tr>
+
+                    <tr>
+
+                        <td>Pães Doces</td>
+                        <td>Pão de Leite</td>
+                        <td>Fofinho e levemente adocicado</td>
+                        <td>R$ 1,20</td>
+                        <td><img src="assets/pao-de-leite.jpg" alt="Pão de leite" width="100"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Pães Integrais</td>
+                        <td>Pão Integral com Sementes</td>
+                        <td>Com chia, linhaça e aveia</td>
+                        <td>R$ 9,00</td>
+                        <td><img src="assets/pao-integral.jpeg" alt="Pão integral" width="100"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <!-- Sub-seção: Doces -->
+            <h3><i><u>Doces</u></i></h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Produto</th>
+                        <th>Descrição breve</th>
+                        <th>Preço</th>
+                        <th>Imagem</th>
+                    </tr>
+                </thead>
+                <!-- Doces e sobremesas -->
+                <tbody>
                     <tr>
                         <td>Doces</td>
-                        <td>Croissant de Manteiga com Chocolate</td>
+                        <td>Croissant com Chocolate</td>
                         <td>Massa folhada leve, estilo francês</td>
                         <td>R$ 9,00</td>
                         <td><img src="assets/croissant-de-chocolate.jpg" alt="Croissant de manteiga" width="100"></td>
                     </tr>
-                    <!-- Linha do produto 3 -->
                     <tr>
-                        <td>Salgados</td>
-                        <td>Pão de Queijo Artesanal</td>
-                        <td>Com queijo da Serra da Canastra</td>
-                        <td>R$ 1,00</td>
-                        <td><img src="assets/pão-queijo.jpg" alt="Pão de queijo" width="100"></td>
-                    </tr>
-                    <!-- Linha do produto 4 -->
-                    <tr>
-                        <td>Doces</td>
+                        <td>Sobremesas</td>
                         <td>Brownie Artesanal</td>
                         <td>Com pedaços de chocolate belga</td>
                         <td>R$ 6,50</td>
                         <td><img src="assets/brownie-de-chocolate.jpg" alt="Brownie de chocolate" width="100"></td>
                     </tr>
-                    <!-- Linha do produto 5 -->
+                </tbody>
+            </table>
+            <!-- tabela de bebidas -->
+            <h3><i><u>Bebidas</u></i></h3>
+            <table border="1">
+                <thead>
                     <tr>
-                        <td>Salgados</td>
-                        <td>Torta Salgada de Frango</td>
-                        <td>Com legumes e requeijão</td>
-                        <td>R$ 8,00</td>
-                        <td><img src="assets/torta-salgada-de-pao-de-forma.jpg" alt="Torta de frango" width="100"></td>
+                        <th>Categoria</th>
+                        <th>Produto</th>
+                        <th>Descrição breve</th>
+                        <th>Preço</th>
+                        <th>Imagem</th>
                     </tr>
-                    <!-- Linha do produto 6 -->
+                </thead>
+                <tbody>
+                    <!-- Tipos de bebidas quentes e frias -->
                     <tr>
-                        <td>Bebidas</td>
+                        <td>Bebidas Quentes</td>
                         <td>Cappuccino Artesanal</td>
                         <td>Com leite vaporizado e canela</td>
                         <td>R$ 7,00</td>
-                        <td><img src="assets/cappuccino.jpeg" alt="Cappuccino" width="100"></td>
+                        <td><img src="assets/cappuccino.jpeg" alt="Cappuccino" width="100" height="90"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Bebidas Geladas</td>
+                        <td>Coca-Cola</td>
+                        <td>é um refrigerante por seu sabor único e refrescante.</td>
+                        <td>R$ 5,00</td>
+                        <td><img src="assets/img/coca-cola.jpg" alt="Coca-Cola" width="100" height="90"></td>
+                    </tr>
+                    <tr>
+                        <td>Bebidas Naturais</td>
+                        <td>Sucos Naturais</td>
+                        <td>Feitos na hora com frutas frescas da estação</td>
+                        <td>R$ 7,00</td>
+                        <td><img src="assets/suco.jpeg" alt="Suco de Laranja" width="100" height="90"></td>
+
                     </tr>
                 </tbody>
-
             </table>
 
         </section>
@@ -136,6 +224,7 @@
                 <li>&#129309;Atendimento próximo e acolhedor</li>
             </ul>
 
+            <!-- Vídeo do YouTube incorporado -->
             <h2>Apresentação do site da padaria:</h2>
             <iframe width="600" height="315" src="https://www.youtube.com/embed/BVY_yumzGYI"
                 title="Bakery | Squarespace" frameborder="0"
@@ -154,6 +243,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Lista os dias da semana e os horários -->
                     <tr>
                         <td>Segunda-feira</td>
                         <td>Descanso da equipe</td>
@@ -170,20 +260,26 @@
             </table>
             <p>Espaço para café no local</p>
         </section>
+
     </main>
 
-    <!-- Rodapé com informações de contato -->
+    <!-- Rodapé com localização e direitos autorais -->
     <footer>
         <div id="localizacao">
             <h2>&#128205;Localização</h2>
             <p>Rua das Mangueiras, 118 - Bairro Jardim das Flores, São Paulo/SP</p>
-            <address>
-                Contato: <a href="contatojuh@padariaartesanal.com.br">contatojuh@padariaartesanal.com.br</a><br>
-                <p>(11) 99999-1234 (WhatsApp)</p>
-                <p>Encomendas via WhatsApp ou direto no balcão</p>
-                <p>&copy; 2025 Padaria Artesanal Art. Todos os direitos reservados.</p>
-            </address>
+
+            <!-- Imagem com mapa clicável -->
+            <img src="assets/img/mapa.jpeg" alt="Imagem com áreas clicáveis" usemap="#mapa" width="500">
+            <map name="mapa">
+                <area shape="rect" coords="0,0,50,50" href="https://maps.app.goo.gl/wPSSbqqoNLSBnjPj8" alt="Área 1">
+            </map>
         </div>
+        <!-- Direitos autorais -->
+        <div>
+            <p>&copy;<i>2025 Padaria Artesanal Art. Todos os direitos reservados.</i></p>
+        </div>
+
     </footer>
 
 

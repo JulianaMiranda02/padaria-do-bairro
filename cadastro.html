@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <!-- Início do formulário -->
+    <form>
+        <!-- Campo de dados pessoais -->
+        <fieldset>
+            <legend><strong>Dados Pessoais:</strong></legend>
+            <!-- Campo de nome -->
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br><br>
+
+            <!-- Campo de e-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+            <!-- Campo de telefone com padrão de máscara (xx) xxxxx-xxxx -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required
+                pattern="\(\d{2}\)\s\d{5}-\d{4}"><br><br>
+
+            <!-- Campo de data de nascimento -->
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+        </fieldset>
+
+        <!-- Campo de endereço -->
+        <fieldset>
+
+            <legend><strong>Endereço:</strong></legend>
+
+            <!-- Rua -->
+            <label for="rua">Rua</label>
+            <input type="text" id="rua" name="rua" placeholder="Digite seu endereço" required>
+
+            <!-- Número da casa -->
+            <label for="numero">N°</label>
+            <input type="number" id="numero" name="numero" placeholder="Digite o número da casa" required>
+
+            <!-- Bairro -->
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro" required><br><br>
+
+            <!-- CEP com validação de formato -->
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required pattern="\d{5}-?\d{3}"
+                title="Digite um CEP no formato 00000-000">
+
+
+        </fieldset>
+
+        <!-- Campo de preferências de produtos -->
+        <fieldset>
+
+            <legend><strong>Preferências:</strong></legend>
+
+            <label>Tipos de produto favorito:</label>
+
+            <!-- Checkbox para Pães -->
+            <input type="checkbox" id="tipos_de_produto1" name="tipos_de_produto_favorito" value="paes">
+            <label for="tipos_de_produto1">Pães</label>
+
+            <!-- Checkbox para Doces -->
+            <input type="checkbox" id="tipos_de_produto2" name="tipos_de_produto_favorito" value="doces">
+            <label for="tipos_de_produto2">Doces</label>
+
+            <!-- Checkbox para Salgados -->
+            <input type="checkbox" id="tipos_de_produto3" name="tipos_de_produto_favorito" value="salgados">
+            <label for="tipos_de_produto3">Salgados</label>
+
+        </fieldset>
+
+        <!-- Termos e condições -->
+        <fieldset>
+
+            <legend><strong>Termos:</strong></legend>
+            <!-- Aceita receber promoções -->
+            <input type="checkbox" id="aceita_promocao" name="aceita_promocao" value="aceito" required>
+            <label for="aceita_promocao">Aceita receber promoções por email</label>
+            <br><br>
+
+            <!-- Aceita os termos de uso -->
+            <input type="checkbox" id="aceita_termos" name="aceita_termos" value="aceito" required>
+            <label for="aceita_termos">Aceita os termos de uso</label>
+            <br><br>
+
+            <!-- Botão de envio do formulário -->
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

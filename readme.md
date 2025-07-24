@@ -1,59 +1,81 @@
-# 🥖 Padaria Artesanal Art
+# 🍞 Padaria Artesanal Art - Website
 
-Bem-vindo ao repositório do projeto **Padaria Artesanal Art**, um site simples e informativo desenvolvido com HTML5 para apresentar uma padaria fictícia com foco em produtos artesanais e atendimento acolhedor.
+Este é um projeto simples de site institucional para a **Padaria Artesanal Art**, uma padaria familiar localizada em São Paulo, especializada em pães artesanais, doces e bebidas frescas.
 
 ## 📄 Descrição
 
-Este site foi criado com o objetivo de divulgar os produtos, valores e história da Padaria Artesanal Art. Nele, os visitantes podem conhecer os principais produtos da padaria, seus diferenciais, horários de funcionamento e localização.
+O site foi desenvolvido com **HTML5** e apresenta:
 
-### Funcionalidades principais:
+- Informações institucionais sobre a padaria
+- Tabelas com lista de produtos (pães, doces e bebidas)
+- Vídeo de apresentação institucional
+- Horários de funcionamento
+- Localização interativa com mapa
+- Formulário de cadastro
+- Links para páginas externas de contato, pedidos e feedback
 
-- Apresentação da padaria com texto introdutório e imagem de destaque.
-- Menu de navegação com links para seções internas.
-- Seção "Sobre nós" com vídeo institucional.
-- Tabela de produtos com imagens, categorias, preços e descrições.
-- Seção com os diferenciais da padaria.
-- Tabela com horários de funcionamento.
-- Mapa e informações de contato no rodapé.
+---
 
-## 📸 Imagens e Mídias
+## 📁 Estrutura de Diretórios
 
-O site faz uso de imagens e vídeos que devem estar organizados nas seguintes pastas:
-
-assets/
-├── img/
-│ ├── imagemprincipalpao.jpg
+padaria-artesan-art/
+├── index.html
+├── assets/
+│ ├── img/
+│ │ ├── imagemprincipalpao.jpg
+│ │ ├── coca-cola.jpg
+│ │ ├── mapa.jpeg
 │ ├── pao.jpeg
+│ ├── pao-na-chapa.jpeg
+│ ├── pao-de-azeitonas.jpeg
+│ ├── pao-de-leite.jpg
+│ ├── pao-integral.jpeg
 │ ├── croissant-de-chocolate.jpg
-│ ├── pão-queijo.jpg
 │ ├── brownie-de-chocolate.jpg
-│ ├── torta-salgada-de-pao-de-forma.jpg
-│ └── cappuccino.jpeg
-├── video/
+│ ├── cappuccino.jpeg
+│ └── ...
+├── assets/video/
 │ └── video-institucional-padaria.mp4
+├── contato.html
+├── pedidos.html
+├── feedback.html
+├── cadastro.html
 
-## 🧰 Tecnologias Utilizadas
+## 🚀 Funcionalidades
 
-- **HTML5** — Linguagem de marcação base da estrutura da página.
-- **CSS (opcional)** — (Não incluso nesse projeto, mas pode ser adicionado para estilização).
-- **Multimídia** — Imagens, vídeo institucional, iframe incorporado do YouTube.
+- ✅ Menu de navegação com links internos e externos
+- ✅ Vídeo institucional embutido
+- ✅ Imagens dos produtos em tabelas
+- ✅ Responsivo e otimizado para SEO
+- ✅ Mapa com área clicável para localização via Google Maps
+- ✅ Formulário de cadastro básico
+- ✅ Rodapé com informações de contato
 
+---
 
+## 🛠️ Tecnologias Utilizadas
 
-🧭 Estrutura das Seções
-#sobre-nos: História e valores da padaria + vídeo institucional.
+- HTML5
+- Imagens e vídeos locais
+- Embed do YouTube
+- Formulários HTML
+- Tabelas com imagens
+- Emojis e entidades HTML
 
-#nossos-produtos: Tabela com categorias, preços e imagens dos produtos.
+---
+## 📍 Localização da Padaria
 
-#diferenciais: Características únicas e iframe de apresentação.
+**Rua das Mangueiras, 118 - Jardim das Flores, São Paulo/SP**
 
-#horarios: Horários de funcionamento em dias úteis e feriados.
+[📌 Ver no Google Maps](https://maps.app.goo.gl/wPSSbqqoNLSBnjPj8)
 
-#localizacao: Endereço, e-mail e WhatsApp de contato.
+---
 
-📬 Contato
-📍 Endereço: Rua das Mangueiras, 118 - Bairro Jardim das Flores, São Paulo/SP
+## 📞 Contato
 
-📧 Email: contatojuh@padariaartesanal.com.br
+- **Email**: [contatojuh@padariaartesanal.com.br](mailto:contatojuh@padariaartesanal.com.br)
+- **WhatsApp**: (11) 99999-1234
 
-📱 WhatsApp: (11) 99999-1234
+## © Direitos Autorais
+
+© 2025 **Padaria Artesanal Art**. Todos os direitos reservados.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title> <!-- Define o título da aba do navegador -->
+</head>
+
+<body>
+    <h1>Feedback</h1>
+
+    <!-- Início do formulário de feedback -->
+    <form>
+        <fieldset>
+            <!-- Agrupa os campos relacionados -->
+            <legend><strong>De sua opinião sobre a padaria abaixo:</strong></legend>
+
+            <!-- Campo para o nome do usuário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required><br><br>
+
+            <!-- Campo para o e-mail do usuário -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required><br><br>
+
+            <!-- Menu suspenso para selecionar o serviço ou produto avaliado -->
+            <label for="produto_servico">Produto Serviços:</label>
+            <select name="produto_servico" id="produto_servico" required>
+                <option value="">--Escolha--</option>
+                <option value="paes">Pães</option>
+                <option value="doces">Doces</option>
+                <option value="salgados">Salgados</option>
+                <option value="bebidas">Bebidas</option>
+                <option value="sobremesas">Sobremesas</option>
+                <option value="atendimento">Atendimento</option>
+            </select><br><br>
+
+            <!-- Opções de avaliação geral com botões de rádio -->
+            <label>Avaliação Geral:</label>
+
+            <input type="radio" id="avaliacao1" name="avaliacao" value="bom" required>
+            <label for="avaliacao1">Bom</label>
+
+            <input type="radio" id="avaliacao2" name="avaliacao" value="regular" required>
+            <label for="avaliacao2">Regular</label>
+
+            <input type="radio" id="avaliacao3" name="avaliacao" value="ótimo" required>
+            <label for="avaliacao3">Ótimo</label>
+
+            <input type="radio" id="avaliacao4" name="avaliacao" value="ruim" required>
+            <label for="avaliacao4">Ruim</label><br><br>
+
+            <!-- Botões para enviar ou limpar o formulário -->
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+    <!-- Fim do formulário -->
+
+
+</body>
+
+</html>
