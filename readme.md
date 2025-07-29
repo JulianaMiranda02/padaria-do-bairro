@@ -1,81 +1,118 @@
-# 🍞 Padaria Artesanal Art - Website
+# 🥖 Padaria Artesanal Art
 
-Este é um projeto simples de site institucional para a **Padaria Artesanal Art**, uma padaria familiar localizada em São Paulo, especializada em pães artesanais, doces e bebidas frescas.
-
-## 📄 Descrição
-
-O site foi desenvolvido com **HTML5** e apresenta:
-
-- Informações institucionais sobre a padaria
-- Tabelas com lista de produtos (pães, doces e bebidas)
-- Vídeo de apresentação institucional
-- Horários de funcionamento
-- Localização interativa com mapa
-- Formulário de cadastro
-- Links para páginas externas de contato, pedidos e feedback
+Bem-vindo ao repositório do site da **Padaria Artesanal Art** — uma padaria de bairro em São Paulo com foco em produtos artesanais, tradição familiar e atendimento acolhedor.
 
 ---
 
-## 📁 Estrutura de Diretórios
+## 🌐 Página Inicial
 
-padaria-artesan-art/
-├── index.html
-├── assets/
-│ ├── img/
-│ │ ├── imagemprincipalpao.jpg
-│ │ ├── coca-cola.jpg
-│ │ ├── mapa.jpeg
-│ ├── pao.jpeg
-│ ├── pao-na-chapa.jpeg
-│ ├── pao-de-azeitonas.jpeg
-│ ├── pao-de-leite.jpg
-│ ├── pao-integral.jpeg
-│ ├── croissant-de-chocolate.jpg
-│ ├── brownie-de-chocolate.jpg
-│ ├── cappuccino.jpeg
-│ └── ...
-├── assets/video/
-│ └── video-institucional-padaria.mp4
-├── contato.html
-├── pedidos.html
-├── feedback.html
-├── cadastro.html
+![Logotipo](assets/img/logo.jpg)
 
-## 🚀 Funcionalidades
+### Seja bem-vindo à Padaria Artesanal Art!
 
-- ✅ Menu de navegação com links internos e externos
-- ✅ Vídeo institucional embutido
-- ✅ Imagens dos produtos em tabelas
-- ✅ Responsivo e otimizado para SEO
-- ✅ Mapa com área clicável para localização via Google Maps
-- ✅ Formulário de cadastro básico
-- ✅ Rodapé com informações de contato
+Aqui, o cheirinho de pão quentinho encontra o calor de um bom papo. Somos uma padaria artesanal onde cada fornada é feita com tempo, cuidado e sabor.
+
+Mais do que vender pães, queremos criar memórias. Seja no café da manhã com a família, no lanche da tarde ou naquele encontro rápido na calçada, nossa padaria é um ponto de encontro para quem aprecia simplicidade, afeto e tradição.
+
+A padaria foi fundada em **2010**, pela minha mãe, **Dona Teresa**. Nosso carro-chefe é o **pão de queijo caseiro**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+### 📽️ Vídeo Institucional
+
+> Uma breve demonstração do nosso café:
+
+![Video Institucional](assets/video/video-institucional-padaria.mp4)
+
+---
+
+## 🥐 Nossos Produtos
+
+### 🥖 Pães
+
+| Categoria           | Produto                   | Descrição breve                        | Preço   | Imagem                                   |
+|---------------------|---------------------------|----------------------------------------|---------|------------------------------------------|
+| Pães Artesanais     | Pão de Fermentação Natural| Integral, multigrãos, com nozes        | R$ 8,00 | ![Pão](assets/img/pao.jpeg)              |
+| Pães Tradicionais   | Pão Francês               | Crocante por fora, macio por dentro    | R$ 0,80 | ![Pão Francês](assets/pao-na-chapa.jpeg) |
+| Pães Especiais      | Pão de Azeitona           | Com pedaços de azeitona preta          | R$ 7,50 | ![Azeitona](assets/pao-de-azeitonas.jpeg)|
+| Pães Doces          | Pão de Leite              | Fofinho e levemente adocicado          | R$ 1,20 | ![Pão Leite](assets/pao-de-leite.jpg)    |
+| Pães Integrais      | Pão Integral com Sementes | Com chia, linhaça e aveia              | R$ 9,00 | ![Integral](assets/pao-integral.jpeg)    |
+
+---
+
+### 🍰 Doces
+
+| Categoria   | Produto                  | Descrição breve                       | Preço   | Imagem                                   |
+|-------------|--------------------------|---------------------------------------|---------|------------------------------------------|
+| Doces       | Croissant com Chocolate  | Massa folhada leve, estilo francês   | R$ 9,00 | ![Croissant](assets/croissant-de-chocolate.jpg) |
+| Sobremesas  | Brownie Artesanal        | Com pedaços de chocolate belga       | R$ 6,50 | ![Brownie](assets/brownie-de-chocolate.jpg)     |
+
+---
+
+### 🥤 Bebidas
+
+| Categoria         | Produto              | Descrição breve                                 | Preço   | Imagem                                  |
+|-------------------|----------------------|--------------------------------------------------|---------|-----------------------------------------|
+| Bebidas Quentes   | Cappuccino Artesanal | Com leite vaporizado e canela                   | R$ 7,00 | ![Cappuccino](assets/cappuccino.jpeg)   |
+| Bebidas Geladas   | Coca-Cola            | Refrigerante com sabor único e refrescante      | R$ 5,00 | ![Coca](assets/img/coca-cola.jpg)       |
+| Bebidas Naturais  | Sucos Naturais       | Feitos na hora com frutas frescas da estação    | R$ 7,00 | ![Suco](assets/suco.jpeg)               |
+
+---
+
+## 🌟 Diferenciais
+
+- 🥖 O pão quentinho que sua manhã merece  
+- 👩‍🍳 Produção artesanal de verdade  
+- 📜 Receitas de família ou tradicionais  
+- 🕐 Produtos fresquinhos o dia todo  
+- 🤝 Atendimento próximo e acolhedor  
+
+---
+
+### 🎞️ Apresentação em Vídeo
+
+[![Apresentação do site](https://img.youtube.com/vi/BVY_yumzGYI/0.jpg)](https://www.youtube.com/embed/BVY_yumzGYI)
+
+---
+
+## 🕒 Horários de Funcionamento
+
+| Dias                 | Horários          |
+|----------------------|-------------------|
+| Segunda-feira        | **Fechado**       |
+| Terça-feira a Domingo| 6:30 às 19h       |
+| Feriados             | **Não abrimos**   |
+
+☕ Espaço para café no local.
+
+---
+
+## 📍 Localização
+
+**Endereço:** Rua das Mangueiras, 118 - Bairro Jardim das Flores, São Paulo/SP
+
+[![Mapa](assets/img/mapa.jpeg)](https://maps.app.goo.gl/wPSSbqqoNLSBnjPj8)
+
+---
+
+## 📄 Licença
+
+&copy; **2025 Padaria Artesanal Art**. Todos os direitos reservados.
+
+---
+
+## 💡 Informações Adicionais
+
+- Este site é uma demonstração de uma padaria fictícia com fins de aprendizado ou apresentação.
+- Todas as imagens estão armazenadas localmente na pasta `assets/`.
+- O projeto pode ser visualizado localmente ao abrir `index.html` em um navegador moderno.
+
+---
+
+## 🧰 Tecnologias
 
 - HTML5
-- Imagens e vídeos locais
-- Embed do YouTube
-- Formulários HTML
-- Tabelas com imagens
-- Emojis e entidades HTML
-
----
-## 📍 Localização da Padaria
-
-**Rua das Mangueiras, 118 - Jardim das Flores, São Paulo/SP**
-
-[📌 Ver no Google Maps](https://maps.app.goo.gl/wPSSbqqoNLSBnjPj8)
-
----
-
-## 📞 Contato
-
-- **Email**: [contatojuh@padariaartesanal.com.br](mailto:contatojuh@padariaartesanal.com.br)
-- **WhatsApp**: (11) 99999-1234
-
-## © Direitos Autorais
-
-© 2025 **Padaria Artesanal Art**. Todos os direitos reservados.
+- CSS3
+- Google Fonts (`Open Sans`)
+- Vídeo MP4 local
+- YouTube (embed)

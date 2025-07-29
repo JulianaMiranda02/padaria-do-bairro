@@ -17,24 +17,33 @@
     <meta name="keywords"
         content="padaria, pães, doces, bolo, café, pão francês, torta,  Jardim das Flores, São Paulo, SP, Padaria Artesanal Art">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+
+
     <!-- Título da aba do navegador -->
     <title>Padaria Artesanal Art </title>
 
 </head>
 
 <body>
-
+    <!-- Cabeçalho da página -->
     <header>
-        <!-- Cabeçalho da página com título e imagem principal -->
-        <h1><em>Padaria Artesanal Art </em></h1>
-        <img src="assets/img/imagemprincipalpao.jpg" alt="desenho de uma mulher com uma cesta de pão" width="300">
-
-        <p>Seja bem vindo a Padaria Artesanal Art !</p>
+        <!--logo-->
+        <a href="/">
+            <img src="assets/img/logo.jpg" alt="desenho de uma mulher com uma cesta de pão" class="logotipo">
+        </a>
     </header>
 
     <!-- Menu de navegação com âncoras para as seções -->
     <nav>
-        <ul>
+        <ul class="menu">
             <li><a href="#sobre-nos">Sobre nós</a></li>
             <li><a href="#nossos-produtos">Nossos Produtos</a></li>
             <li><a href="#diferenciais">Diferenciais</a></li>
@@ -49,12 +58,17 @@
         </ul>
     </nav>
 
+    <h1>Padaria Artesanal Art</h1></br>
+
+
+    <p class="texto-boasvindas">Seja bem vindo a Padaria Artesanal Art !</p></br></br>
+
     <!-- Conteúdo principal -->
     <main>
         <!-- Seção "Sobre nós" com descrição da padaria e vídeo institucional -->
         <section id="sobre-nos">
 
-            <h2>Sobre nós</h2>
+            <h2>Sobre nós</h2></br>
 
             <p>Aqui, o cheirinho de pão quentinho encontra o calor de um bom papo. Somos uma padaria artesanal onde cada
                 fornada é
@@ -62,26 +76,29 @@
 
             <p>Mais do que vender pães, queremos criar memórias. Seja no café da manhã com a família, no lanche da tarde
                 ou naquele encontro rápido na calçada, nossa padaria é um ponto de encontro para quem aprecia
-                simplicidade, afeto e tradição.</p>
+                simplicidade, afeto e tradição.</p></br>
 
             <p>A padaria foi fundada em 2010, pela minha mãe, Dona Teresa. O carro-chefe é o pão de queijo caseiro.</p>
+            </br>
 
             <!-- Vídeo institucional da padaria -->
-            <p> <strong>Uma breve demonstração do nosso café veja abaixo:</strong></p>
+            <p> <strong>Uma breve demonstração do nosso café veja abaixo:</strong></p></br>
             <video width="400" height="240" controls>
                 <source src="assets/video/video-institucional-padaria.mp4" type="video/mp4">
+                Seu navegador não tem suporte para esse tipo de arquivo.
             </video>
 
         </section>
 
         <!-- Seção de produtos com tabelas: Pães, Doces, Bebidas -->
         <section id="nossos-produtos">
-            <h2>Nossos produtos</h2>
+            <h2>Nossos produtos</h2></br></br>
 
             <!-- Sub-seção: Pães -->
-            <h3><i><u>Pães</u></i></h3>
-            <table border="1">
+            <h3><i><u>Pães</u></i></h3></br>
+            <table>
                 <thead>
+                    
                     <tr>
                         <th>Categoria </th>
                         <th>Produto</th>
@@ -89,6 +106,7 @@
                         <th>Preço</th>
                         <th>Imagem</th>
                     </tr>
+             
                 </thead>
                 <tbody>
                     <!-- Linhas para diferentes tipos de pães -->
@@ -138,10 +156,10 @@
                     </tr>
                 </tbody>
 
-            </table>
+            </table></br></br>
             <!-- Sub-seção: Doces -->
-            <h3><i><u>Doces</u></i></h3>
-            <table border="1">
+            <h3><i><u>Doces</u></i></h3></br>
+            <table>
                 <thead>
                     <tr>
                         <th>Categoria</th>
@@ -168,10 +186,10 @@
                         <td><img src="assets/brownie-de-chocolate.jpg" alt="Brownie de chocolate" width="100"></td>
                     </tr>
                 </tbody>
-            </table>
+            </table></br></br>
             <!-- tabela de bebidas -->
-            <h3><i><u>Bebidas</u></i></h3>
-            <table border="1">
+            <h3><i><u>Bebidas</u></i></h3></br>
+            <table>
                 <thead>
                     <tr>
                         <th>Categoria</th>
@@ -207,34 +225,33 @@
 
                     </tr>
                 </tbody>
-            </table>
+            </table></br></br>
 
         </section>
 
         <!-- Seção com os diferenciais da padaria -->
         <section id="diferenciais">
-            <h2>Diferenciais</h2>
+            <h2>Diferenciais</h2></br>
 
-            <p>“ &#x1F35E;O pão quentinho que sua manhã merece.”</p>
-
-            <ul>
+            <ul class="lista-diferenciais">
+                <li> &#x1F35E;O pão quentinho que sua manhã merece</li>
                 <li>&#129489;&#8205;&#127859;Produção artesanal de verdade</li>
                 <li>&#128220;Receitas de família ou tradicionais</li>
                 <li>&#129388;Produtos fresquinhos o dia todo</li>
                 <li>&#129309;Atendimento próximo e acolhedor</li>
-            </ul>
+            </ul></br></br>
 
             <!-- Vídeo do YouTube incorporado -->
-            <h2>Apresentação do site da padaria:</h2>
+            <h2>Apresentação do site da padaria:</h2></br>
             <iframe width="600" height="315" src="https://www.youtube.com/embed/BVY_yumzGYI"
                 title="Bakery | Squarespace" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+        </section></br>
 
         <!-- Seção horários de funcionamento -->
         <section id="horarios">
-            <h2>&#9200;Horarios de funcionamento</h2>
+            <h2>&#9200;Horarios de funcionamento</h2></br>
             <table border="1">
                 <thead>
                     <tr>
@@ -257,24 +274,24 @@
                         <td>Não abrimos</td>
                     </tr>
                 </tbody>
-            </table>
-            <p>Espaço para café no local</p>
-        </section>
+            </table></br>
+            <p>Espaço para café no local.</p>
+        </section></br>
 
     </main>
 
     <!-- Rodapé com localização e direitos autorais -->
     <footer>
         <div id="localizacao">
-            <h2>&#128205;Localização</h2>
-            <p>Rua das Mangueiras, 118 - Bairro Jardim das Flores, São Paulo/SP</p>
+            <h2>&#128205;Localização</h2></br>
+            <p>Rua das Mangueiras, 118 - Bairro Jardim das Flores, São Paulo/SP</p></br>
 
             <!-- Imagem com mapa clicável -->
             <img src="assets/img/mapa.jpeg" alt="Imagem com áreas clicáveis" usemap="#mapa" width="500">
             <map name="mapa">
                 <area shape="rect" coords="0,0,50,50" href="https://maps.app.goo.gl/wPSSbqqoNLSBnjPj8" alt="Área 1">
             </map>
-        </div>
+        </div></br>
         <!-- Direitos autorais -->
         <div>
             <p>&copy;<i>2025 Padaria Artesanal Art. Todos os direitos reservados.</i></p>

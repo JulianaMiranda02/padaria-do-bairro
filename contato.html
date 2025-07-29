@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Contato | Padaria Artesanal Art</title> <!-- Título da aba do navegador -->
 </head>
 
 <body>
-    <h1>Contato</h1> <!-- Título principal da página -->
+    <header>
+        <!--logo-->
+        <a href="/index.html">
+            <img src="/assets/img/logo.jpg" alt="desenho de uma mulher com uma cesta de pão"  class="logotipo">
+        </a>
+        <!-- Título principal da página -->
+        <h1>Contato</h1>
+
+    </header>
 
     <!-- Início do formulário de contato -->
     <form>
@@ -18,14 +33,14 @@
 
             <!-- Campo para nome completo -->
             <label for="nome">Nome completo:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required></br></br>
 
             <!-- Campo para e-mail -->
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required></br></br>
 
             <!-- Campo para escolher o assunto -->
-            <label for="assunto">Assunto:</label><br>
+            <label for="assunto">Assunto:</label></br>
             <select name="assunto" id="assunto" required>
                 <option value="">--Escolha --</option>
                 <option value="pedido">Pedido</option>
@@ -41,18 +56,22 @@
             <!-- Campo para telefone com padrão de validação -->
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\s\d{5}-\d{4}"
-                placeholder="(xx) xxxxx-xxxx" required title="Conforme o formato (xx) xxxxx-xxxx"><br><br>
+                placeholder="(xx) xxxxx-xxxx" required title="Conforme o formato (xx) xxxxx-xxxx"></br></br>
 
             <!-- Área para mensagem com limite de caracteres -->
-            <label for="mensagem">Mensagem:</label><br><br>
+            <label for="mensagem">Mensagem:</label></br></br>
             <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" minlength="10"
-                maxlength="30"></textarea><br><br>
+                maxlength="30"></textarea></br></br>
 
+        </fieldset></br></br>
+        <div>
             <!-- Botões para envio e limpeza do formulário -->
-            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
-        </fieldset>
+            <button class="botao">Enviar</button> 
+            
+            <input type="reset" value="Limpar" class="botao">
+        </div>
 
-    </form><br><br>
+    </form></br></br>
 
     <!-- Informações de contato adicionais -->
     <div id="contato">

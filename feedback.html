@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Feedback</title> <!-- Define o título da aba do navegador -->
 </head>
 
 <body>
-    <h1>Feedback</h1>
+    <header>
+        <!--logo-->
+        <a href="/index.html">
+            <img src="/assets/img/logo.jpg" alt="desenho de uma mulher com uma cesta de pão"  class="logotipo">
+        </a>
+
+        <h1>Feedback</h1>
+    </header>
+
 
     <!-- Início do formulário de feedback -->
     <form>
@@ -18,11 +33,11 @@
 
             <!-- Campo para o nome do usuário -->
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required><br><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required></br></br>
 
             <!-- Campo para o e-mail do usuário -->
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required></br></br>
 
             <!-- Menu suspenso para selecionar o serviço ou produto avaliado -->
             <label for="produto_servico">Produto Serviços:</label>
@@ -49,11 +64,15 @@
             <label for="avaliacao3">Ótimo</label>
 
             <input type="radio" id="avaliacao4" name="avaliacao" value="ruim" required>
-            <label for="avaliacao4">Ruim</label><br><br>
+            <label for="avaliacao4">Ruim</label></br></br>
 
+        </fieldset></br></br>
+        <div>
             <!-- Botões para enviar ou limpar o formulário -->
-            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
-        </fieldset>
+            <button class="botao">Enviar</button> 
+            
+            <input type="reset" value="Limpar"class="botao">
+        </div>
     </form>
     <!-- Fim do formulário -->
 
