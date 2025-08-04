@@ -1,25 +1,41 @@
 .logotipo {
-
-    height: 100px;
     border-radius: 512px;
-    margin: 20px;
-
+    margin: 10px;
+    height: 70px;
 }
 
 .menu {
     display: flex;
     background-color: #552814;
-    font-size: 18px;
-    padding: 10px;
+    padding: 5px;
     list-style-type: none;
-
-
+    align-items: center;
+    font-size: 16px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    /* altura fixa */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
 }
+
+
+.conteudo {
+    padding-top: 100px;
+    /* mesmo valor da altura do menu */
+}
+
+
 
 .menu a {
     text-decoration: none;
     color: #F5EDE3;
+    display: flex;
+    justify-content: space-evenly;
     padding: 10px;
+    font-size: 16px;
+
 
 }
 
@@ -27,15 +43,68 @@
     background-color: #BB793E;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #4a2b1b;
+    margin-top: 100px;
+
+}
+
+.texto .subtitulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.texto .paragrafo {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.botao1 {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4a2b1b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.botao1:hover {
+    background-color: #6a3b2b;
+}
+
+.imagem img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-top: 100px;
+}
 
 
 
-h1 {
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: underline;
-    color: #552814;
-
+.limpar-float {
+    clear: both;
+    height: 0;
 }
 
 h2,
@@ -44,14 +113,11 @@ p {
     color: #552814;
 }
 
+
 .lista-diferenciais {
     list-style-type: none;
 }
 
-.texto-boasvindas {
-    text-align: center;
-    font-size: 18px;
-}
 
 table,
 th,
@@ -74,7 +140,7 @@ th {
 
 body {
     background-color: #F5EDE3;
-    font-family: Open Sans;
+    font-family: "Open Sans";
 }
 
 input[type="text"] {
@@ -109,7 +175,7 @@ fieldset {
     cursor: pointer;
     text-align: center;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 8px;
     width: 95px;
     height: 45px;
@@ -143,8 +209,42 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
+
 
 section {
     margin-bottom: 40px;
+}
+
+section h2:first-child {
+    text-decoration: underline;
+}
+
+section p:last-child {
+    font-weight: bold;
+}
+
+
+.botao-comprar {
+    background-color: #552814;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    margin:10px;
+}
+
+.botao-comprar:hover{
+    color:#BB793E;
+    font-size: 23px;
+    cursor: pointer;
+}
+td:nth-child(1){
+    background-color: #BB793E;
+    border: solid 2px white;
+    color: aliceblue;
+    padding: 5px;
+    font-size: 18px;
 }
