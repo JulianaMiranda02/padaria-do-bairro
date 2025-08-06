@@ -18,6 +18,7 @@
     height: 100px;
     /* altura fixa */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    z-index:1;
 }
 
 
@@ -99,8 +100,6 @@
     display: block;
     margin-top: 100px;
 }
-
-
 
 .limpar-float {
     clear: both;
@@ -232,19 +231,112 @@ section p:last-child {
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    color:#fff;
-    margin:10px;
+    color: #fff;
+    margin: 10px;
 }
 
-.botao-comprar:hover{
-    color:#BB793E;
+.botao-comprar:hover {
+    color: #BB793E;
     font-size: 23px;
     cursor: pointer;
 }
-td:nth-child(1){
+
+td:nth-child(1) {
     background-color: #BB793E;
     border: solid 2px white;
     color: aliceblue;
     padding: 5px;
     font-size: 18px;
 }
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 5px;
+    background-color: #BB793E;
+    padding: 20px;
+
+
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card-conteudo {
+    padding: 10px;
+}
+
+.botao-conteudo {
+    background-color: #BB793E;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;   
+}
+
+.iconewhatss {
+    color: #44C052;
+    /* verde do WhatsApp */
+    font-size: 60px;
+    
+
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.2);
+  }
+
+.badge {
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 134px;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.promocao {
+    background-color: #DB0000;
+    top: 16px;
+    right: 10px;
+}
+
+.novo {
+    top: 16px;
+    right: 10px;
+    background-color: #25d366;
+}
+
+.iconecor {
+    color: orange;
+}
+

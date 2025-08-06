@@ -17,6 +17,8 @@
     <meta name="keywords"
         content="padaria, pães, doces, bolo, café, pão francês, torta,  Jardim das Flores, São Paulo, SP, Padaria Artesanal Art">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -53,7 +55,10 @@
                 <li><a href="/contato.html" target="_blank">Contato</a></li>
                 <li><a href="/pedidos.html" target="_blank">Pedidos</a></li>
                 <li><a href="/feedback.html" target="_blank">Feedback</a></li>
-                <li><a href="/cadastro.html" target="_blank">Cadastro</a></li>
+
+                <li>
+                    <a href="/cadastro.html" target="_blank">Cadastro</a>
+                </li>
             </ul>
         </nav>
 
@@ -119,7 +124,69 @@
 
         <!-- Seção de produtos com tabelas: Pães, Doces, Bebidas -->
         <section id="nossos-produtos">
-            <h2>Nossos produtos</h2><br><br>
+            <h2>Nossos produtos</h2><br>
+
+            <div class="cards-container">
+
+                <div class="card">
+                    <img src="assets/img/pao-branco-crocante.jpg" alt="pao-branco-crocante">
+                    <div class="card-conteudo">
+
+                        <div class="badge promocao"><i class="bi bi-fire iconecor"></i> Promoção</div>
+
+                        <h4>Pão Branco Crocante</h4>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <p>R$ 0,80 por Kg.</p>
+                        <button class="botao-conteudo">Adicionar <i class="bi bi-cart-fill"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/pao-de-queijo.jpg" alt="pao-de-queijo">
+
+                    <div class="card-conteudo">
+
+                        <h4>Pão de queijo</h4>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <p>R$ 1,00 por Kg.</p>
+                        <button class="botao-conteudo">Adicionar <i class="bi bi-cart-fill"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/brownie-chocolate-com-gelado-da-noz-e-da-baunilha.jpg"
+                        alt="brownie-de-chocolate">
+
+                    <div class="card-conteudo">
+
+                        <div class="badge novo"><i class="bi bi-fire iconecor"></i> Novo</div>
+
+                        <h4>Brownie Artesanal</h4>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <p>R$ 6,50 por unidade.</p>
+                        <button class="botao-conteudo">Adicionar <i class="bi bi-cart-fill"></i></button>
+
+                    </div>
+                </div>
+
+            </div><br><br>
+
+            <!-- Botão flutuante do WhatsApp -->
+            <a href="https://wa.me/(11)99999-1234 " class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp iconewhatss"></i>
+            </a>
 
             <!-- Sub-seção: Pães -->
             <h3><i><u>Pães</u></i></h3><br>
@@ -327,7 +394,6 @@
         </div>
 
     </footer>
-
 
 </body>
 
